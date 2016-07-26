@@ -5,103 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>お問い合わせ | 小売問屋どっとこむ</title>
+     <link rel="stylesheet" href="about.css">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <style>
-      body {
-        font-size: 14px;
-      }
-      
-      .navbar {
-        border-radius: 0; 
-      }
-      
-      .row {
-        margin-bottom: 50px;
-      }
-      
-      .icon {
-        text-align: center;
-      }
-      
-      .icon .glyphicon {
-        margin-bottom: 10px;
-        font-size: 40px;
-        color: #777;
-      }
-      
-      .content h2 {
-        margin-top: 0;
-        padding-bottom: 15px;
-      }
-      .content p {
-        margin-bottom: 30px;
-      }
-      
-      footer {
-        border-top: 1px solid#e7e7e7;
-        background-color: #f8f8f8;
-        text-align: center;
-      }
-      
-      .copyright {
-        padding: 20px 0;
-        font-size: 12px;
-        color: #666;
-      }
-      
-      @media (max-width: 768px) {
-        body {
-          font-size: 12px;
-        }
-        h1 {
-          font-size: 30px;
-        }
-        h2 {
-          font-size: 24px;
-        }
-        .panel-title {
-          font-size: 14px;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">小売問屋どっとこむ</a>
-          </div>
-          <div class="collapse navbar-collapse" id="site-menu">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html">menu</a></li>
-              <li><a href="about.html">about</a></li>
-              <li class="active"><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-          </div>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="selected">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
+      <div id="logo">
+        <img src="profile.jpg" alt="">
+        <h1>藤崎信一</h1>
+      </div>
     </header>
     <div class="container">
       <div class="page-header">
         <h1>お問い合わせ</h1>
       </div>
         <div class="row">
-        <div class="icon col-sm-3 hidden-xs">
-          <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-          <div class="icon-caption">お電話</div>
-        </div>
+       
         <div class="content col-sm-9">
           <h2>お電話によるお問い合わせ</h2>
           <p>
@@ -148,11 +79,9 @@
           </div>
         </div>
       </div>
+
       <div class="row">
-        <div class="icon col-sm-3 hidden-xs">
-          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-          <div class="icon-caption">メール</div>
-        </div>
+
         <div class="content col-sm-9">
           <h2>メールによるお問い合わせ</h2>
           <p>
@@ -207,9 +136,8 @@
           </form>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="copyright">© 2015 SAMPLE Inc.</div>
-    </footer>
+      <footer>
+        <p>&copy; 2016 Shinichi Fujisaki.</p>
+      </footer>
   </body>
 </html>
